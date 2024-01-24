@@ -1,0 +1,147 @@
+{
+  "settings": {
+    "name": "Site 2024-01-24 14:06",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.8",
+    "siteFonts": [],
+    "imageResize": true,
+    "usedWebp": true,
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://sushuswap.github.io/sitemap.xml",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://sushuswap.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "favicon": false,
+    "mbrsiteDomain": "8wfbkcrkp7",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.8"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "SushiSwap™ | Home Official Site",
+        "meta_descr": "WebSushiSwap is a community-driven decentralized exchange (DEX) that allows you to swap tokens natively across 7 blockchains, including Ethereum, Arbitrum, Optimism, Polygon, …",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://www.sushi.com/swap\"><img src=\"@PROJECT_PATH@/assets/images/sushiswap.png\" alt=\"SushiSwap\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "u2gEO4AvJV",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b><a href=\"https://www.sushi.com/swap\" class=\"text-primary\">SushiSwap</a>™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            \n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b><a href=\"https://www.sushi.com/swap\" class=\"text-primary\">SushiSwap</a>: Revolutionizing DeFi with Decentralized Swapping and Community Governance</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">In the vibrant world of decentralized finance (DeFi), SushiSwap has emerged as a prominent player, captivating the attention of users, developers, and investors alike. Born out of the decentralized exchange (DEX) ecosystem, SushiSwap not only facilitates token swapping but also pioneers community governance, making it a unique and influential force within the DeFi landscape. This article aims to provide a comprehensive exploration of SushiSwap, from its inception to its impact on DeFi, highlighting its innovative features, governance model, and community-driven ethos.\n<br>\n<br>I. Genesis of <a href=\"https://www.sushi.com/swap\" class=\"text-primary\">SushiSwap</a>:\n<br>\n<br>A. Evolution of Decentralized Exchanges:\n<br>\n<br>The pivotal role of decentralized exchanges in reshaping traditional finance.\n<br>Challenges associated with centralized exchanges and the rise of DeFi alternatives.\n<br>B. Forking Uniswap and the Birth of SushiSwap:\n<br>\n<br>SushiSwap's roots in the Uniswap protocol.\n<br>The motivations and vision behind the creation of SushiSwap.\n<br>C. Founder and Community Dynamics:\n<br>\n<br>The role of pseudonymous founder Chef Nomi.\n<br>Transition to a community-driven project and the importance of decentralization.\n<br>II. SushiSwap's Unique Features:\n<br>\n<br>A. Automated Market Maker (AMM) Model:\n<br>\n<br>Overview of <a href=\"https://www.sushi.com/swap\" class=\"text-primary\">SushiSwap's</a> AMM model for decentralized token swapping.\n<br>Liquidity provision and earning rewards through providing liquidity.\n<br>B. Yield Farming and Staking:\n<br>\n<br>Introduction to yield farming and its integration into SushiSwap.\n<br>Staking mechanisms and the SUSHI token's role in the SushiSwap ecosystem.\n<br>C. Community Governance:\n<br>\n<br>The significance of community governance in SushiSwap's decision-making process.\n<br>The evolution of decentralized governance mechanisms within the protocol.\n<br>III. Understanding SushiSwap's Governance Model:\n<br>\n<br>A. Onsen and Token Voting:\n<br>\n<br>Onsen as a liquidity incentive program.\n<br>Token voting and how the community participates in protocol upgrades.\n<br>B. Migration to Multi-Signature (Multisig) Wallets:\n<br>\n<br>The transition from a single-signature wallet to multisig for enhanced security.\n<br>The impact on decentralization and community control.\n<br>C. Treasury Management and Ecosystem Growth:\n<br>\n<br><a href=\"https://www.sushi.com/swap\" class=\"text-primary\">SushiSwap's</a> treasury and its role in funding development and community initiatives.\n<br>Strategies for sustainable ecosystem growth.\n<br>IV. SushiSwap's Impact on DeFi:\n<br>\n<br>A. Liquidity Provision and Trading Volumes:\n<br>\n<br>SushiSwap's contribution to the liquidity of various tokens.\n<br>Impact on overall trading volumes within the DeFi ecosystem.\n<br>B. Competing with Other DeFi Protocols:\n<br>\n<br>SushiSwap's position in the competitive landscape of decentralized exchanges.\n<br>Collaborations and partnerships to strengthen its market presence.\n<br>V. Challenges and Lessons Learned:\n<br>\n<br>A. Security Incidents and Chef Nomi's Exit:\n<br>\n<br>The security incident involving Chef Nomi's actions.\n<br>Community response, lessons learned, and the transition to decentralized governance.\n<br>B. Scalability and Gas Fees:\n<br>\n<br>Challenges related to scalability on the Ethereum network.\n<br>Efforts to address high gas fees and potential solutions for scalability.\n<br>VI. Future Developments and Innovations:\n<br>\n<br>A. Layer 2 Solutions:\n<br>\n<br>SushiSwap's exploration of layer 2 scaling solutions.\n<br>How layer 2 solutions can enhance scalability and reduce transaction costs.\n<br>B. Integration with Emerging DeFi Trends:\n<br>\n<br>SushiSwap's response to emerging trends such as non-fungible tokens (NFTs).\n<br>Innovations and developments to stay at the forefront of DeFi trends.\n<br>Conclusion:\n<br>\n<br><a href=\"https://sushuswap.github.io/\" class=\"text-primary\">SushiSwap's</a> journey from a Uniswap fork to a community-driven decentralized exchange and governance platform is a testament to the dynamism of the DeFi space. As it continues to evolve, SushiSwap remains a beacon of innovation, pushing the boundaries of what decentralized finance can achieve. With its unique features, commitment to decentralization, and lessons learned from challenges, SushiSwap stands as a pioneering force, shaping the future of decentralized exchanges and community-driven governance within the broader DeFi ecosystem.</p>\n              </div>\n            </div>\n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "u2gEOF5qPl",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
